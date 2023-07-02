@@ -1,0 +1,219 @@
+
+.updates{
+    margin: 70px 6%;
+}
+
+.updatesContent{
+    color: grey;
+    font-size: 1.2rem;
+    font-family: 'roboto', sans-serif;
+    line-height: 30px;
+    
+
+}
+
+.updatesContent span{
+    color: red;
+    font-size: 1.5rem;
+    font-family: 'roboto', sans-serif;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.center{
+    /* border: 3px solid blue; */
+    margin: 70px 6%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+
+}
+.main{
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    width:90%;
+    height: auto;
+}
+.projects{
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.pagination,
+.list{
+    /* border: 3px solid green; */
+    display: flex;
+    width: 70%;
+    flex-direction:column;
+    height: auto;
+}
+.list2{
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    height: auto;
+
+}
+
+.info{
+    /* border: 3px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 35px;
+}
+.content{
+    /* border: 3px solid purple; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.image{
+    /* border: 3px solid purple; */
+    display: flex;
+    width: 25%;
+    /* margin-left: 30px; */
+}
+
+.Gheading{
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-weight:100;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1.1px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:#609966;
+}
+
+.greenHeading{
+    font-family: 'Kanit', sans-serif;
+    color: #609966;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.content2{
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'roboto', sans-serif;
+    line-height: 27px;
+    font-weight: 700px;
+    margin: 3px 0 ;
+}
+
+.projectPhoto{
+    /* border: 3px solid purple; */
+   margin-top: 0;
+   padding-top: 0;
+   object-fit: contain;
+   max-width: 100%;
+   max-height: 100%;
+}
+
+@media screen and (max-width:900px) {
+    .center{
+        margin:70px 1%;
+    }
+    .main{
+        flex-direction: column;
+
+    }
+    .projects{
+        width: 100%;
+    }
+    .pagination,
+    .list{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:900px) and (max-width:1150px){
+    .center{
+        margin: 70px 2%;
+    }
+    .projects{
+        margin-right: 30px;
+       
+    }
+
+    /* .pagination,
+    .list{
+        width: 60%;
+    } */
+}
+
+.disabled{
+    border: 2.5px solid grey;
+    color: grey;
+    cursor:default;
+    background-color: white;
+
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 60px;
+    text-align: center;
+    margin-right: 30px;
+}
+.disabled:hover{
+    background-color: white;
+    color: grey;
+}
+
+#pagination-buttons{
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+    /* margin: 5px; */
+}
+
+.pagination-button{
+    border: 2.5px solid #609966;
+    color: #609966;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 60px;
+    text-align: center;
+    margin-right: 30px;
+    
+    
+    /* margin-left:30px; */
+}
+
+
+.pagination-button:hover{
+    cursor: pointer;
+    background-color: #609966;
+    color: white;
+}
+
+.content3{
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-family: 'roboto', sans-serif;
+    line-height: 27px;
+    font-weight: 700px;
+    margin: 3px 0 ;
+}
+
+
+
+
+

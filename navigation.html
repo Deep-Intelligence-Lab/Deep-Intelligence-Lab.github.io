@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    
+    <title>Dr.Puneet Gupta</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+                <a class="navLink" href="index.html">HOME</a>
+                <a class="navLink" href="publications.html">PUBLICATIONS</a>
+                <a class="navLink" href="projects.html">PROJECTS</a>
+                <a class="navLink" href="achievements.html">ACHIEVEMENTS</a>
+                <a class="navLink" href="research.html">RESEARCH SCHOLARS</a>
+
+        </div>
+
+        <div class="hamburgerMenu" id="hamburgerMenu">
+            <svg onclick="hamClick()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="40px" height="40px" fill-rule="nonzero"><g fill="#609966" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M3,7c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,14c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,21c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"></path></g></g></svg>
+        </div>
+    </nav>
+
+    <div class="backDrop" id="backDrop">
+        <img onclick="closeClick()" src="images/closeButton.png" alt="" class="closeButton" >
+        <div class="centered">
+            <a class="hamLink"  href="index.html">HOME</a>
+            <a  class="hamLink" href="publications.html">PUBLICATIONS</a>
+            <a class="hamLink" href="projects.html">PROJECTS</a>
+            <a  class="hamLink" href="achievements.html">ACHIEVEMENTS</a>
+            <a  class="hamLink" href="research.html">RESEARCH SCHOLARS</a>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Detect scroll event
+            $(window).scroll(function () {
+                // Check if the page is scrolled beyond a specific point (e.g., 100 pixels from the top)
+                if ($(this).scrollTop() > 100) {
+                    // Add the "scrolled" class to the navbar
+                    $('.navbar').addClass('scrolled');
+                } else {
+                    // Remove the "scrolled" class from the navbar
+                    $('.navbar').removeClass('scrolled');
+                }
+            });
+        });
+
+        const navLinksEls = document.querySelectorAll('.navLink');
+        const windowPathName = window.location.pathname;
+
+        navLinksEls.forEach(navLinkEl => {
+            const navLinkPathName = new URL(navLinkEl.href).pathname;
+
+            if(windowPathName === navLinkPathName ){
+                navLinkEl.classList.add('active');
+            }
+        });
+
+        function hamClick(){
+       
+             const backDrop = document.getElementById('backDrop');
+             backDrop.style.display = "flex";
+            
+             backDrop.classList.add('slideLeftAnimation');
+        }
+
+      
+
+        function closeClick(){
+            const backDrop = document.getElementById("backDrop");
+            
+            backDrop.style.display = "none";
+            backDrop.classList.remove("slideLeftAnimation");
+        }
+
+     
+
+    </script>
+
+    </body>
+
+</body>
+
+</html>

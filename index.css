@@ -1,0 +1,306 @@
+.toCenter{
+    /* border: 3px solid purple; */
+    margin: 70px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+
+
+.aboutMe{
+    height:auto;
+    width: 100%;
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.photo{
+    /* border: 3px solid red; */
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:3%;
+}
+
+
+
+.sirPhoto{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 3px 3px 20px;
+}
+
+.info{
+    /* border: 3px solid black; */
+    padding: 40px 0;
+   
+    height:auto;
+    width: 85%;
+    background-color: #f3f3f3 ; 
+    border-radius: 30px 7px 7px 30px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 5%;
+}
+
+
+
+.info2{
+    /* border: 3px solid black; */
+    text-align:left;
+    width: 80%;
+    position: relative;
+    left: 3%;
+}
+
+.heading{
+    font-weight:900;
+    font-size: 2.5rem;
+    letter-spacing: 0.2px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+.subHeading{
+    font-weight: 400;
+    opacity: 0.9;
+    font-size: 1.5rem;
+    letter-spacing: 0.1px;
+    margin-top: 5px;
+}
+
+.content{
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'roboto', sans-serif;
+    line-height: 27px;
+    font-weight: 700px;
+    text-align: justify;
+}
+
+
+.info2Phone span,
+.info2 span{
+    color: #5F8D4E;
+    font: bolder;
+    font-size: 18px;
+    
+}
+
+.socialLinks{
+    margin-top: 13px;
+   
+}
+
+/* phonemode */
+/* aboutme */
+.toCenter2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 2%;
+    height: auto;
+    display: none;
+}
+
+.mainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.photoDiv{
+    /* border: 3px solid black; */
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.infoPhone{
+    /* border: 3px solid black; */
+    padding: 40px 0;
+  
+    height:auto;
+    width: 85%;
+    background-color: #f3f3f3 ; 
+    border-radius: 30px 7px 7px 30px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.info2Phone{
+    text-align:left;
+    width: 80%;
+}
+
+.photoPhone{
+    /* border: 3px solid black; */
+    z-index: 1;
+    height: 250px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.name{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+    .info2{
+        left: 5%;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:550px){
+    .toCenter{
+        display: none;
+    }
+
+    .toCenter2{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .toCenter{
+        display: none;
+    }
+
+    .toCenter2{
+        display: flex;
+    }
+
+    .photoDiv{
+        flex-direction: column;
+    }
+
+    .photoPhone{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .name{
+        text-align: center;
+    }
+
+
+
+    
+}
+
+.center{
+    /* border: 3px solid purple; */
+    margin: 80px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+
+.secondSection{
+    /* border: 3px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+    height: auto;
+
+}
+
+
+
+.education{
+    /* border: 3px solid red; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    height: auto;
+}
+.Gheading{
+    font-weight:900;
+    font-size: 2.5rem;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color:#609966;
+}
+.schools{
+    margin: 0 10% 10px 10%;
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.schools div{
+    margin-right:30px;
+}
+
+.mainHeading{
+    font-weight: 400;
+    opacity: 0.9;
+    font-size: 1.5rem;
+    letter-spacing: 0.1px;
+}
+
+.business{
+    height: 35px;
+    width: 35px;
+}
+
+.greenHeading{
+    font-family: 'Kanit', sans-serif;
+    color: #609966;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.content2{
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'roboto', sans-serif;
+    line-height: 27px;
+    font-weight: 700px;
+    margin: 3px 0 ;
+}
+
+@media screen and (max-width: 900px){
+    .secondSection{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .education{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,261 @@
+.Gheading{
+    font-weight:100;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1.1px;
+    
+    color:#609966;
+   text-align: center;
+   margin-top: 70px;
+   margin-bottom: 60px;
+}
+
+.Gheading2{
+  font-weight:100;
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1.1px;
+  
+  color:#609966;
+ text-align: center;
+ margin-top: -20px;
+ margin-bottom: 60px;
+}
+
+
+
+
+.column {
+    
+    width: 20%;
+    /* padding: 0 10px; */
+    margin: 0px 20px 0px 20px ;
+    border-radius: 12px;  
+ 
+ 
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+    margin: 50px 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+   
+  }
+
+  .greenHeading{
+    font-family: 'Kanit', sans-serif;
+    color: #609966;
+    font-size: 1.2rem;
+  }
+  .content2{
+    letter-spacing: 1px;
+
+    font-family: 'roboto', sans-serif;
+
+    margin: 3px 0 ;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+   
+    padding: 16px;
+    text-align: center;
+    background-color: #f3f3f3;
+    width:90%;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+
+  }
+ 
+  .card img{
+    /* border: 3px solid black; */
+    width: 100%;
+    height: 35%;
+    margin-top: 0;
+    object-fit: contain;
+  }
+
+  .info{
+    height: 70%;
+  }
+  .card a {
+    text-decoration: none;
+    color: white;
+  }
+  .card div{
+    /* border: 3px solid black; */
+    margin-top: 20px;
+  }
+ 
+
+@media screen and (max-width: 1300px) and (min-width:1060px){
+
+  .column{
+    width: 25%;
+  }
+
+}
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 1060px) and (min-width:720px) {
+    .column {
+      width: 35%; 
+      /* flex-basis: calc(100% - 20px); */
+    }
+    .card{
+      height: 90%;
+    }
+
+  }
+
+  @media screen and (max-width: 720px) and (min-width:500px)  {
+    .column {
+      margin: 0 40px 0 40px;
+      width: 100%; 
+      flex-basis: calc(100% - 20px);
+    }
+    .card{
+      height: 80%;
+    }
+
+    .row{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      margin: 50px auto 0 auto;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .column {
+      margin: 0 40px 0 40px;
+      width: 100%; 
+      flex-basis: calc(100% - 20px);
+    }
+    .card{
+      height: 90%;
+    }
+
+    .row{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      margin: 50px auto 0 auto;
+    }
+    
+  }
+
+  
+
+
+
+/* interns */
+
+
+
+.center2{
+  /* border: 3px solid purple; */
+  margin: 0 3% 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+
+.secondSection{
+  /* border: 3px solid blue; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  height: auto;
+
+}
+
+
+
+.education{
+  /* border: 3px solid red; */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  height: auto;
+}
+.Gheading22{
+  font-weight:100;
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1.1px;
+  
+  color:#609966;
+}
+
+.schools{
+  margin: 0 10% 10px 10%;
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.schools div{
+  margin-right:30px;
+}
+
+.mainHeading2{
+  font-weight: 400;
+  opacity: 0.9;
+  font-size: 1.5rem;
+  letter-spacing: 0.1px;
+}
+
+.business{
+  height: 35px;
+  width: 35px;
+}
+
+.greenHeading2{
+  font-family: 'Kanit', sans-serif;
+  color: #609966;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.content2{
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-family: 'roboto', sans-serif;
+  line-height: 27px;
+  font-weight: 700px;
+  margin: 3px 0 ;
+}
+
+@media screen and (max-width: 900px){
+  .secondSection{
+      flex-direction:column-reverse;
+      align-items: center;
+      width: 100%;
+  }
+  
+  .education{
+      width: 90%;
+      margin-bottom: 30px;
+  }
+}
